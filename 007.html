@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>007</title>
+	<link href="asdfasdf.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		.status {width: 87.5%;}
+	</style>
+</head>
+<body class="007">
+	<div class="status"></div>
+	
+	<h1>promises</h1>
+	
+	<p>if we <strong>chain</strong> the <tt>then</tt>s:</p>
+	<pre class="snippet">
+<span class="deemphasise">const delay = ((ms) => {
+    return new Promise((resolve, reject) => {
+        if (typeof ms === 'number') {
+            setTimeout(resolve, ms);
+        } else {
+            reject();
+        }
+    });
+});
+
+const success = (() => {
+    console.log('3 seconds');
+});</span>
+
+const redirect = (() => {
+    setTimeout(() => {
+        window.location.replace('http://bit.ly/2jbiAYH');
+    }, 1000);    
+});
+
+<span class="deemphasise">const failure = (() => {
+    alert('not a number!!!!11!11!one');
+});
+
+delay(1000).then(success)</span>.then(redirect)<span class="deemphasise">.catch(failure);</span></pre>
+</body>
+</html>

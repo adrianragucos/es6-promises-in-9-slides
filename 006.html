@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>006</title>
+	<link href="asdfasdf.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		.status {width: 75%;}
+	</style>
+</head>
+<body class="006">
+	<div class="status"></div>
+	
+	<h1>promises</h1>
+	
+	<p>we can also use <tt>.catch</tt> if we want to be idiomatic:</p>
+	<pre class="snippet">
+<span class="deemphasise">const delay = ((ms) => {
+    return new Promise((resolve, reject) => {
+        if (typeof ms === 'number') {
+            setTimeout(resolve, ms);
+        } else {
+            reject();
+        }
+    });
+});
+
+const success = (() => {
+    console.log('3 seconds');
+});
+
+const failure = (() => {
+    alert('not a number!!!!11!11!one');
+});
+
+delay('foo').then(success)</span>.catch(failure);</pre>
+
+	<p><tt>.catch</tt> is effectively <tt>.then(null, failure)</tt></p>
+</body>
+</html>

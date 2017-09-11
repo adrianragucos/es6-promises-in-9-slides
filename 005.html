@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>005</title>
+	<link href="asdfasdf.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		.status {width: 62.5%;}
+	</style>
+</head>
+<body class="005">
+	<div class="status"></div>
+	
+	<h1>promises</h1>
+	
+	<p>let's try to polish a turd:</p>
+	<pre class="snippet">
+<span class="deemphasise">const delay = ((ms) => {
+    return new Promise((resolve, reject) => {
+        if (typeof ms === 'number') {
+            setTimeout(resolve, ms);
+        }</span> else {
+            reject();
+        }
+    <span class="deemphasise">});
+});
+
+const success = (() => {
+    console.log('3 seconds');
+});</span>
+
+const failure = (() => {
+    alert('not a number!!!!11!11!one');
+});
+
+<span class="deemphasise">delay('foo').then(success</span>, failure<span class="deemphasise">);</span></pre>
+</body>
+</html>

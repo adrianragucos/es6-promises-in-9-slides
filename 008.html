@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>008</title>
+	<link href="asdfasdf.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		.status {width: 100%;}
+	</style>
+</head>
+<body class="008">
+	<div class="status"></div>
+	
+	<h1>promises</h1>
+	
+	<p>so much promise:</p>
+	
+	<pre class="snippet">
+const fetchJSON = ((url) => {
+    return new Promise((resolve, reject) => {
+        $.ajax({url: url})
+        .done((data) => {resolve('yes yes yes');})
+        .fail((error) => {reject('no no no');})
+    });
+});
+
+const urls = ['http://url.com/123', 'http://url.com/456', 'http://url.com/789'];
+let promises = urls.map(fetchJSON);
+
+Promise
+    .all(promises)
+    .then((result) => {
+        // do something that represents success if ALL promises are successful
+        console.log(result); // yes yes yes
+    })
+    .catch((error) => {
+        // do something that represents failure if ANY of the promises fail
+        console.log(error); // no no no
+    });</pre>
+</body>
+</html>

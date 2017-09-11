@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>002</title>
+	<link href="asdfasdf.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		.status {width: 25%;}
+	</style>
+</head>
+<body class="002">
+	<div class="status"></div>
+
+	<h1>promises</h1>
+
+	<p>background information:</p>
+
+	<p>the three states of a promise:</p>
+	pending: initial state, neither fulfilled nor rejected.<br />
+	fulfilled: meaning that the operation completed successfully.<br />
+	rejected: meaning that the operation failed.
+
+	<p>your constructor:</p>
+	<pre class="snippet">
+const promise = new Promise((resolve, reject) => {  
+    // do (an asynchronous) something // kicks off pending
+    //
+    // resolve(someValue); // fulfilled
+    // or
+    // reject("failure reason"); // rejected
+});</pre>
+</body>
+</html>

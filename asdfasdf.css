@@ -1,0 +1,74 @@
+body {
+	display: flex;
+	padding: 0 2.5em;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	font-size: 32px;
+}
+
+body > * {
+	margin: 2em 0;
+}
+
+h1 {
+	margin: 0.5em;
+}
+
+p {
+	margin: 1em;
+}
+
+blockquote {
+	margin: 0;
+	padding: 1em;
+	background-color: #ccc;
+	font-style: italic;
+}
+
+table {
+	width: 100%;
+	background-color: #000;
+}
+
+td {
+	width: 50%;
+	background-color: #fff;
+}
+
+tbody  td  {
+	padding: 0.5em;
+	text-align: left;
+	font-family: 'courier new';
+	font-size: 0.5em;
+}
+
+tt {
+	background-color: #b8eddf;
+	font-size: 26px;
+}
+
+.status {
+	position: absolute;
+	top: -2em;
+	left: 0;
+	height: 10px;
+	background-color: #ccc;
+}
+
+.snippet {
+	display: inline-block;
+	margin: 0 auto 0.25em;
+	padding: 0.2em;
+	background-color: #b8eddf;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+.deemphasise {
+	opacity: 0.3;
+}
+
+.footnote {
+	font-size: 0.5em;
+}
